@@ -1,4 +1,10 @@
 Rails.application.routes.draw do
+  get 'dealings/deposit'
+
+  get 'dealings/retirement'
+
+  get 'dealings/moviment'
+
   devise_for :users
   resources :accounts
   # The priority is based upon order of creation: first created -> highest priority.
