@@ -5,3 +5,14 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+clients = []
+
+10.times do |p|
+	clients << Client.create(
+		name: Faker::Commerce.product_name,
+		phone: Faker::PhoneNumber.cell_phone,
+		address: Faker::Address.street_address,
+		state: 0
+		)
+	
+end

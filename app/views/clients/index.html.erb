@@ -1,0 +1,30 @@
+
+
+<h1>Lista clientes</h1>
+<table>
+  <thead>
+    <tr>
+      <th>nombre</th>
+      <th>telefono</th>
+      <th>direccion</th>
+      <th>estado</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @clients.each do |account| %>
+      <tr>
+        <td><%= account.name %></td>
+        <td><%= account.phone %></td>
+        <td><%= account.address %></td>
+        <td><%= account.state %></td>
+        
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Account', new_account_path %>

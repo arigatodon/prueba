@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'clients/index'
+
   get 'dealings/deposit'
 
   get 'dealings/retirement'
