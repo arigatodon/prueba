@@ -7,6 +7,9 @@ class AccountsController < ApplicationController
     @accounts = Account.all
   end
 
+  def deposit
+    
+  end
   # GET /accounts/1
   # GET /accounts/1.json
   def show
